@@ -1,0 +1,160 @@
+#footer {
+  padding-top: 50px;
+}
+#footer .section-footer {
+  padding: 0;
+}
+#footer .section-footer .text_heading_footer {
+  color: var(--Primary-2, #5C8920);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+}
+#footer .section-footer-menu {
+  padding: 0;
+}
+#footer .section-footer-menu .follow-icon-footer {
+  margin-top: 20px;
+}
+#footer .section-footer-menu .follow-icon-footer .icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+#footer .section-footer-menu .follow-icon-footer .icon i {
+  position: relative;
+  top: 1px;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item {
+  margin-bottom: 20px;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item:last-child {
+  margin-bottom: 0;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._7anx {
+  color: var(--Primary-2, #5C8920);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._7anx::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 2px;
+  background: #F2BF0F;
+  bottom: -5px;
+  left: 0;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._7anx::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background: #F2BF0F;
+  bottom: -5px;
+  left: 20px;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._9cky {
+  color: var(--Neutral-0, #1F1F1F);
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+#footer .section-footer-menu .block_html.has-margin-top {
+  margin-top: 110px;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4gqi {
+  margin-bottom: 0;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4gqi ._7vxu {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4gqi ._7vxu a {
+  color: var(--Neutral-0, #1F1F1F);
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4gqi ._7vxu a:hover {
+  color: var(--Mau_1);
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4hil {
+  margin-bottom: 0;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4hil ._2gfw {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4hil ._2gfw:last-child {
+  margin-bottom: 0;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4hil ._2gfw i {
+  width: 20px;
+  margin-right: 6px;
+  position: relative;
+  top: 2px;
+  color: #5C8920;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4hil ._2gfw ._8tct {
+  flex: 1;
+  color: var(--Neutral-0, #1F1F1F);
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+#footer .section-footer-menu .block_html .widget-footer .widget-footer-item ._4hil ._2gfw.phone ._8tct {
+  font-size: 18px;
+  font-weight: 700;
+}
+#footer .section-footer-menu ._6twd {
+  display: flex;
+  border-radius: 50px;
+  height: 50px;
+  background: rgb(241, 217, 124);
+}
+#footer .section-footer-menu ._6twd ._6joh {
+  flex: 1;
+}
+#footer .section-footer-menu ._6twd ._6joh .wpcf7-form-control {
+  border: unset;
+  box-shadow: unset;
+  margin: 0;
+  background: transparent;
+  border-radius: 50px;
+  height: 50px;
+  padding-left: 20px;
+}
+#footer .section-footer-menu ._6twd ._4avc {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .section-footer-menu ._6twd ._4avc button {
+  margin: 0;
+  padding: 0;
+}
+#footer .section-footer-menu .sftm_r1_c2 .widget-footer-item {
+  padding-left: 30px;
+}
+#footer .sftm_r2 {
+  border-top: 1px solid #CBD6BD;
+}
+#footer .sftm_r2 .copyright p {
+  margin-bottom: 0;
+  color: var(--Neutral-0, #1F1F1F);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+}

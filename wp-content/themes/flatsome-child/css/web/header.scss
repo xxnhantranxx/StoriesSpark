@@ -1,0 +1,79 @@
+#top-bar{
+    .beryl-draw{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        ._9twx{
+            list-style: none;
+            margin-bottom: 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            &:first-child{
+                margin-right: 50px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 100%;
+                    right: -25px;
+                    top: 0;
+                    background: var(--Mau_2);
+                }
+            }
+            ._0xha{
+                width: 20px;
+                margin-right: 10px;
+            }
+            a{
+                color: var(--Neutral-6, #FFF);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                &:hover{
+                    color: var(--Mau_2);
+                }
+            }
+        }
+    }
+    .header-search-form-wrapper{
+        ._4rbj{
+            border-radius: 39px;
+            background: var(--Neutral-6, #FFF);
+            overflow: hidden;
+            ._8xvf {
+                .search-field{
+                    box-shadow: unset;
+                    border: unset;
+                    background: #fff;
+                    color: var(--Neutral-0, #1F1F1F);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    height: 30px;
+                }
+            }
+            ._0von {
+                .ux-search-submit{
+                    background: #fff;
+                    border: unset;
+                    box-shadow: unset;
+                }
+            }
+        }
+    }
+}
+#masthead{
+    .header-nav-main{
+        &>.menu-item{
+            margin: 0 26px;
+            &>.nav-top-link{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 85px;
+                padding: 0;
+            }
+        }
+    }
+}
