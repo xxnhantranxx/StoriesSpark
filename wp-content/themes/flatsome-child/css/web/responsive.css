@@ -15,6 +15,18 @@
   #main .section-7 {
     padding-bottom: 180px;
   }
+  #main .Procedure_3::after {
+    top: -120px;
+  }
+  #main .SectionPost_1:first-of-type {
+    padding-bottom: 50px;
+  }
+  #footer .section-footer {
+    padding: 0;
+  }
+  #footer .section-footer .text_heading_footer {
+    margin-top: 40px;
+  }
 }
 @media only screen and (max-width: 800px) {
   #header #masthead .logo-left .logo {

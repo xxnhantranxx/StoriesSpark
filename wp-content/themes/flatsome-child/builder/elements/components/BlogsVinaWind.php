@@ -15,7 +15,6 @@ add_ux_builder_shortcode('BlogsVinaWind', array(
             'param_name' => 'cat',
             'full_width' => true,
             'default' => '',
-            'conditions' => 'post_type == "post"',
             'config' => array(
                 'multiple' => false,
                 'placeholder' => 'Select...',
@@ -25,15 +24,6 @@ add_ux_builder_shortcode('BlogsVinaWind', array(
                 ),
             )
         ),
-        'post_type' => array(
-            'type' => 'select',
-            'heading' => 'Post Type',
-            'default' => 'post',
-            'options' => array(
-                'post' => 'Post',
-                'idea-bank' => 'Idea Bank',
-            ),
-        ),
         'offset' => array(
             'type' => 'slider',
             'heading' => 'Offset',
@@ -42,28 +32,13 @@ add_ux_builder_shortcode('BlogsVinaWind', array(
             'max' => 20,
             'min' => 0,
         ),
-        'cout' => array(
+        'count' => array(
             'type' => 'slider',
             'heading' => 'Tổng',
             'default' => 6,
             'unit'    => 'count',
             'max' => 20,
             'min' => 0,
-        ),
-        'style' => array(
-            'type' => 'radio-buttons',
-            'heading' => __('Phong cách'),
-            'default' => 'post',
-            'options' => array(
-                'post'  => array( 'title' => 'Normal'),
-                'video'  => array( 'title' => 'Video'),
-            ),
-        ),
-        'label' => array(
-            'type' => 'textfield',
-            'conditions' => 'style == "post"',
-            'heading' => __( 'Nhãn' ),
-            'default' => '',
         ),
     )
 ));

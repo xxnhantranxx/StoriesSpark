@@ -62,7 +62,7 @@ function BoxWebsite($atts, $content)
         <?php if ($align == 'right') { ?>
             <div class="image-box-website">
                 <div class="image-main">
-                    <div class="image-box wow animate__animated animate__zoomInDown" data-wow-duration="1200ms">
+                    <div class="image-box wow animate__animated animate__zoomIn" data-wow-duration="1200ms">
                         <img class="image-box-website-item" src="<?php echo wp_get_attachment_image_url($image, 'full'); ?>">
                     </div>
                 </div>

@@ -24,11 +24,7 @@
                             </div>
                             <div class="share">
                                 <div class="button-toggle-share">
-                                    <?php if (pll_current_language() == 'vi') { ?>
-                                        <span class="_5veh">Chia sẻ</span>
-                                    <?php } else if (pll_current_language() == 'en') { ?>
-                                        <span class="_5veh">Share</span>
-                                    <?php } ?>
+                                    <span class="_5veh">Chia sẻ</span>
                                     <i class="fa-light fa-arrow-right"></i>
                                 </div>
                                 <div class="share-list">

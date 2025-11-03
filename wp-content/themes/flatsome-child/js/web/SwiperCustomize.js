@@ -54,4 +54,29 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         },
     });
+
+    var HeaderTabInner = new Swiper(".HeaderTabInner", {
+        loop: false,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        freeMode: true,
+    });
+    var TabContentInner = new Swiper(".TabContentInner", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        autoHeight: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        navigation: {
+            nextEl: '.TabNext',
+            prevEl: '.TabPrev',
+        },
+        thumbs: {
+            swiper: HeaderTabInner,
+        },
+        watchSlidesVisibility: true,
+    });
 });

@@ -1,4 +1,5 @@
 jQuery(document).ready(function ($) {
+    
     // Khởi tạo WowJs
     wow = new WOW(
         {
@@ -87,6 +88,28 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    // Program Tab: xử lý chuyển tab cho component Program
+    $('.Program').each(function () {
+        const $container = $(this);
+        const $tabs = $container.find('.tab'); // Tab headers trong swiper-slide
+        const $panels = $container.find('.panel.entry-content'); // Tab content panels
+
+        $tabs.on('click', function (e) {
+            e.preventDefault();
+            const idx = $(this).index();
+
+            // Chuyển active class cho tab và panel tương ứng
+            $tabs.removeClass('active');
+            $(this).addClass('active');
+
+            $panels.removeClass('active').eq(idx).addClass('active');
+        });
+    });
+
+    $('.button-toggle-share').click(function(){
+        $(this).next('.share-list').toggleClass('active');
+    });
+    
 	// GSAP stacking cards trong jQuery document
 	gsap.registerPlugin(ScrollTrigger);
 
@@ -157,4 +180,5 @@ jQuery(document).ready(function ($) {
 		// Fallback: chạy ngay với trình duyệt cũ
 		$counts.each(function () { animateCount($(this), 2000); });
 	}
+
 });

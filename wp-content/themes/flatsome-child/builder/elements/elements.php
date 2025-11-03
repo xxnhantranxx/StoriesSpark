@@ -10,3 +10,8 @@ require_once __DIR__ . '/components/TabSystem.php';
 require_once __DIR__ . '/components/StackingCard.php';
 require_once __DIR__ . '/components/SlideCard.php';
 require_once __DIR__ . '/components/Partner.php';
+require_once __DIR__ . '/components/Breadcumbs.php';
+require_once __DIR__ . '/components/BreadcumbsItem.php';
+require_once __DIR__ . '/components/Program.php';
+require_once __DIR__ . '/components/BoxQuyTrinh.php';
+require_once __DIR__ . '/components/LocalStrore.php';

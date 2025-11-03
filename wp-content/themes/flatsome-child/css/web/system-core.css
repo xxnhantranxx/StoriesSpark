@@ -616,3 +616,15 @@ body,
   position: relative;
   max-height: 105px;
 }
+
+.BoxWebsite {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.BoxWebsite .text-box-website {
+  width: 50%;
+}
+.BoxWebsite .image-box-website {
+  flex: 1;
+}

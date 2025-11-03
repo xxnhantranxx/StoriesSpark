@@ -634,3 +634,14 @@ body,
     position: relative;
     max-height: 105px;
 }
+.BoxWebsite  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .text-box-website{
+        width: 50%;
+    }
+    .image-box-website{
+        flex: 1;
+    }
+}

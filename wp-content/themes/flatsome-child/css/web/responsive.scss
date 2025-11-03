@@ -17,6 +17,20 @@
         .section-7{
             padding-bottom: 180px;
         }
+        .Procedure_3::after{
+            top: -120px;
+        }
+        .SectionPost_1:first-of-type{
+            padding-bottom: 50px;
+        }
+    }
+    #footer{
+        .section-footer{
+            padding: 0;
+            .text_heading_footer{
+                margin-top: 40px;
+            }
+        }
     }
 }
 
