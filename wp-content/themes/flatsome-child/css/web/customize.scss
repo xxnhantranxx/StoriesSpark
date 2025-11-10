@@ -300,6 +300,7 @@
                 display: flex;
                 align-items: center;
                 flex-wrap: wrap;
+                margin-bottom: 60px;
                 .left_tab_header{
                     width: 335px;
                     .item_header_tab {
@@ -394,11 +395,17 @@
                 }
                 .right_tab_header{
                     flex: 1;
+                    .image-inner-tab{
+                        img{
+                            width: 100%;
+                        }
+                    }
                 }
             }
             .content_pannel_tab{
                 .entry-content{
                     display: none;
+                    padding-top: 0;
                     &.active{
                         display: block;
                     }
@@ -800,6 +807,7 @@
                 opacity: .5;
                 &.swiper-slide-active{
                     opacity: 1;
+                    border: 2px solid var(--Mau_1);
                 }
                 .VideoWebsite {
                     position: relative;
@@ -853,6 +861,9 @@
         padding-bottom: 50px;
         .s8_r1{
             .s8_r1_c1 {
+                width: 350px;
+                flex: unset;
+                max-width: 100%;
                 .LabelSubTitle {
                     &.green_mark{
                         width: 178px;
@@ -873,10 +884,15 @@
                 .text_heading_s8{
                     h2{
                         color: var(--Primary-3, #939598);
-                        font-size: 28px;
+                        font-size: 32px;
                         font-weight: 900;
                     }
                 }
+            }
+            .s8_r1_c2{
+                max-width: 100%;
+                width: calc(100% - 350px);
+                flex: unset;
             }
         }
     }
@@ -2029,6 +2045,7 @@
                 border-radius: 52px 0 40px 0;
                 border: 2px solid var(--Primary-1, #F2BF0F);
                 padding: 32px 35px;
+                background: rgb(231, 236, 225);
                 ._8abc{
                     display: flex;
                     align-items: center;
@@ -2096,6 +2113,7 @@
                         img{
                             border-radius: 23px;
                             width: 100%;
+                            border: 1px solid #FFF;
                         }
                     }
                 }

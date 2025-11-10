@@ -258,6 +258,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 #main .section-4 .TabSystem .tab_header .left_tab_header {
   width: 335px;
@@ -340,8 +341,12 @@
 #main .section-4 .TabSystem .tab_header .right_tab_header {
   flex: 1;
 }
+#main .section-4 .TabSystem .tab_header .right_tab_header .image-inner-tab img {
+  width: 100%;
+}
 #main .section-4 .TabSystem .content_pannel_tab .entry-content {
   display: none;
+  padding-top: 0;
 }
 #main .section-4 .TabSystem .content_pannel_tab .entry-content.active {
   display: block;
@@ -725,6 +730,7 @@
 }
 #main .section-8 .swiper-slide._4gxe.swiper-slide-active {
   opacity: 1;
+  border: 2px solid var(--Mau_1);
 }
 #main .section-8 .swiper-slide._4gxe .VideoWebsite {
   position: relative;
@@ -768,6 +774,11 @@
 #main .section-8 .swiper-slide:nth-last-child(2) {
   transform: scale(0.8); /* Làm nhỏ slide hai bên */
 }
+#main .section-8 .s8_r1 .s8_r1_c1 {
+  width: 350px;
+  flex: unset;
+  max-width: 100%;
+}
 #main .section-8 .s8_r1 .s8_r1_c1 .LabelSubTitle.green_mark {
   width: 178px;
   height: 43px;
@@ -785,8 +796,13 @@
 }
 #main .section-8 .s8_r1 .s8_r1_c1 .text_heading_s8 h2 {
   color: var(--Primary-3, #939598);
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 900;
+}
+#main .section-8 .s8_r1 .s8_r1_c2 {
+  max-width: 100%;
+  width: calc(100% - 350px);
+  flex: unset;
 }
 #main .section-9 .heading_s9 h2 {
   color: var(--Primary-3, #939598);
@@ -1837,6 +1853,7 @@
   border-radius: 52px 0 40px 0;
   border: 2px solid var(--Primary-1, #F2BF0F);
   padding: 32px 35px;
+  background: rgb(231, 236, 225);
 }
 #main .Program_5 .p5_r2 .html_p5 ._8abc {
   display: flex;
@@ -1907,6 +1924,7 @@
 #main .Program_5 .p5_r2 .html_p5 ._8abc ._9flk img {
   border-radius: 23px;
   width: 100%;
+  border: 1px solid #FFF;
 }
 #main .Procedure_1 {
   padding-bottom: 120px;

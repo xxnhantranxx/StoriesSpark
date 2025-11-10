@@ -21,6 +21,11 @@ add_ux_builder_shortcode( 'VideoWebsite', array(
                     'heading' => __('Image'),
                     'default' => ''
                 ),
+                'img_mobile' => array(
+                    'type' => 'image',
+                    'heading' => __('Ảnh Mobile'),
+                    'default' => ''
+                ),
             ),
         ),
         'class' => array(
