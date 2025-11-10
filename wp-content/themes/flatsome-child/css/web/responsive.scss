@@ -1,23 +1,33 @@
-@media only screen and (max-width:2500px) {
-    .wave-container{
-        max-height: 75px;
+@media only screen and (min-width:1367px) {
+    #main{
+        .section-10{
+            .s10_r1_c1 {
+                .image_small_size {
+                    display: none;
+                }
+                .image_full_size {
+                    display: block;
+                }
+            }
+        }
     }
 }
-@media only screen and (max-width:1920px) {
-    .wave-container{
-        max-height: 60px;
+@media only screen and (min-width: 1600px){
+    #main{
+        .section-10{
+            .s10_r1 .s10_r1_c2 .col-inner ._2yzs{
+                border-radius: 60px;
+                &::before{
+                    display: none;
+                }
+                ._6dty ._7qiv .wpcf7-form-control{
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }
-@media only screen and (max-width:1600px) {
-    .wave-container{
-        max-height: 49px;
-    }
-}
-
 @media only screen and (max-width:1366px) {
-    .wave-container{
-        max-height: 40px;
-    }
     #main{
         .section-7{
             padding-bottom: 180px;
@@ -27,6 +37,16 @@
         }
         .SectionPost_1:first-of-type{
             padding-bottom: 50px;
+        }
+        .section-10{
+            .s10_r1_c1 {
+                .image_small_size {
+                    display: block;
+                }
+                .image_full_size {
+                    display: none;
+                }
+            }
         }
     }
     #footer{
@@ -486,6 +506,7 @@
                 padding: 0;
                 background: transparent;
                 border-radius: 20px;
+                top: -5px;
                 .header-search-form-wrapper{
                     border: unset;
                     background: transparent;
@@ -737,6 +758,9 @@
             }
             .s7_r2{
                 margin-top: 15px;
+                .slide_home .s7_r2_c1_sl1_r1_c2{
+                    margin-top: 0;
+                }
             }
         }
         .section-8 {
@@ -819,6 +843,7 @@
                             width: auto;
                             padding: 10px;
                             border-radius: 5px 5px 0 0;
+                            margin-top: 0;
                             span{
                                 font-size: 15px;
                             }
@@ -876,6 +901,17 @@
             }
             .ab4_r1{
                 margin-bottom: 15px;
+            }
+            .ab4_r2 {
+                .ab4_r2_c2{
+                    margin-bottom: 20px;
+                }
+                .ab4_r2_c2 {
+                    margin-bottom: 20px;
+                    .box_icon_ab4{
+                        margin-top: 0;
+                    }
+                }
             }
         }
         .About_5{
@@ -974,6 +1010,11 @@
                         .tab {
                             &> a span{
                                 font-size: 16px;
+                            }
+                            &.active::before{
+                                width: 60px;
+                                height: 50px;
+                                top: -40px;
                             }
                             &#tab-see{
                                 height: 130px;
@@ -1107,6 +1148,31 @@
             }
             .pro2_r1 {
                 margin-top: 35px;
+                ._6kwx {
+                    ._7lve {
+                        justify-content: space-around;
+                        ._7mmn {
+                            flex: unset;
+                            ._9xlu{
+                                position: relative;
+                                top: 0;
+                                transform: unset;
+                                left: 0;
+                                height: 30px;
+                                width: 120px;
+                                padding-left: 50px;
+                                border-radius: 5px;
+                                img{
+                                    width: 60px;
+                                    height: auto;
+                                }
+                                ._9fzu{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
                 .BoxQuyTrinh{
                     padding: 15px;
                     .image-box-website{
@@ -1251,7 +1317,7 @@
     }
     #footer {
         .section-footer{
-            padding-bottom: 30px;
+            padding-bottom: 0;
         }
         .section-footer-menu {
             .sftm_r1_c1,
@@ -1262,9 +1328,34 @@
             .block_html.has-margin-top{
                 margin-top: 0;
             }
+            .sftm_r1_c1 {
+                .wpcf7-form{
+                    margin-bottom: 0;
+                }
+                .logo_footer .img-inner img{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
             .sftm_r1_c2{
-                .block_html.has-margin-top{
-                    margin-top: 110px;
+                .block_html{
+                    .widget-footer-item{
+                        padding-left: 0;
+                        ._4gqi{
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-right: -20px;
+                            ._7vxu{
+                                width: calc(50% - 20px);
+                                margin-right: 20px;
+                                margin-bottom: 10px;
+                                &:last-child{
+                                    margin-right: 0;
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

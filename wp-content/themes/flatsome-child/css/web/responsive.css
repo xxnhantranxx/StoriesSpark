@@ -1,22 +1,23 @@
-@media only screen and (max-width: 2500px) {
-  .wave-container {
-    max-height: 75px;
+@media only screen and (min-width: 1367px) {
+  #main .section-10 .s10_r1_c1 .image_small_size {
+    display: none;
+  }
+  #main .section-10 .s10_r1_c1 .image_full_size {
+    display: block;
   }
 }
-@media only screen and (max-width: 1920px) {
-  .wave-container {
-    max-height: 60px;
+@media only screen and (min-width: 1600px) {
+  #main .section-10 .s10_r1 .s10_r1_c2 .col-inner ._2yzs {
+    border-radius: 60px;
   }
-}
-@media only screen and (max-width: 1600px) {
-  .wave-container {
-    max-height: 49px;
+  #main .section-10 .s10_r1 .s10_r1_c2 .col-inner ._2yzs::before {
+    display: none;
+  }
+  #main .section-10 .s10_r1 .s10_r1_c2 .col-inner ._2yzs ._6dty ._7qiv .wpcf7-form-control {
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 1366px) {
-  .wave-container {
-    max-height: 40px;
-  }
   #main .section-7 {
     padding-bottom: 180px;
   }
@@ -25,6 +26,12 @@
   }
   #main .SectionPost_1:first-of-type {
     padding-bottom: 50px;
+  }
+  #main .section-10 .s10_r1_c1 .image_small_size {
+    display: block;
+  }
+  #main .section-10 .s10_r1_c1 .image_full_size {
+    display: none;
   }
   #footer .section-footer {
     padding: 0;
@@ -405,6 +412,7 @@
     padding: 0;
     background: transparent;
     border-radius: 20px;
+    top: -5px;
   }
   .mobile-nav .header-search-dropdown .nav-dropdown-default .header-search-form-wrapper {
     border: unset;
@@ -616,6 +624,9 @@
   #main .section-7 .s7_r2 {
     margin-top: 15px;
   }
+  #main .section-7 .s7_r2 .slide_home .s7_r2_c1_sl1_r1_c2 {
+    margin-top: 0;
+  }
   #main .section-8 {
     padding-bottom: 30px;
   }
@@ -691,6 +702,7 @@
     width: auto;
     padding: 10px;
     border-radius: 5px 5px 0 0;
+    margin-top: 0;
   }
   #main .About_3 .ab3_r2_c1 .tab_hanh_trinh .nav-tabs .tab a span {
     font-size: 15px;
@@ -735,6 +747,15 @@
   }
   #main .About_4 .ab4_r1 {
     margin-bottom: 15px;
+  }
+  #main .About_4 .ab4_r2 .ab4_r2_c2 {
+    margin-bottom: 20px;
+  }
+  #main .About_4 .ab4_r2 .ab4_r2_c2 {
+    margin-bottom: 20px;
+  }
+  #main .About_4 .ab4_r2 .ab4_r2_c2 .box_icon_ab4 {
+    margin-top: 0;
   }
   #main .About_5 {
     padding-top: 15px;
@@ -821,6 +842,11 @@
   }
   #main .Program_2 .p2_r2 .tab_tien_trinh .nav-simple .tab > a span {
     font-size: 16px;
+  }
+  #main .Program_2 .p2_r2 .tab_tien_trinh .nav-simple .tab.active::before {
+    width: 60px;
+    height: 50px;
+    top: -40px;
   }
   #main .Program_2 .p2_r2 .tab_tien_trinh .nav-simple .tab#tab-see {
     height: 130px;
@@ -938,6 +964,29 @@
   }
   #main .Procedure_1 .pro2_r1 {
     margin-top: 35px;
+  }
+  #main .Procedure_1 .pro2_r1 ._6kwx ._7lve {
+    justify-content: space-around;
+  }
+  #main .Procedure_1 .pro2_r1 ._6kwx ._7lve ._7mmn {
+    flex: unset;
+  }
+  #main .Procedure_1 .pro2_r1 ._6kwx ._7lve ._7mmn ._9xlu {
+    position: relative;
+    top: 0;
+    transform: unset;
+    left: 0;
+    height: 30px;
+    width: 120px;
+    padding-left: 50px;
+    border-radius: 5px;
+  }
+  #main .Procedure_1 .pro2_r1 ._6kwx ._7lve ._7mmn ._9xlu img {
+    width: 60px;
+    height: auto;
+  }
+  #main .Procedure_1 .pro2_r1 ._6kwx ._7lve ._7mmn ._9xlu ._9fzu {
+    font-size: 14px;
   }
   #main .Procedure_1 .pro2_r1 .BoxQuyTrinh {
     padding: 15px;
@@ -1068,7 +1117,7 @@
     font-size: 24px;
   }
   #footer .section-footer {
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
   #footer .section-footer-menu .sftm_r1_c1,
   #footer .section-footer-menu .sftm_r1_c2,
@@ -1078,8 +1127,29 @@
   #footer .section-footer-menu .block_html.has-margin-top {
     margin-top: 0;
   }
-  #footer .section-footer-menu .sftm_r1_c2 .block_html.has-margin-top {
-    margin-top: 110px;
+  #footer .section-footer-menu .sftm_r1_c1 .wpcf7-form {
+    margin-bottom: 0;
+  }
+  #footer .section-footer-menu .sftm_r1_c1 .logo_footer .img-inner img {
+    display: block;
+    margin: 0 auto;
+  }
+  #footer .section-footer-menu .sftm_r1_c2 .block_html .widget-footer-item {
+    padding-left: 0;
+  }
+  #footer .section-footer-menu .sftm_r1_c2 .block_html .widget-footer-item ._4gqi {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+  }
+  #footer .section-footer-menu .sftm_r1_c2 .block_html .widget-footer-item ._4gqi ._7vxu {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  #footer .section-footer-menu .sftm_r1_c2 .block_html .widget-footer-item ._4gqi ._7vxu:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
   }
   .wave-container {
     max-height: 12px;

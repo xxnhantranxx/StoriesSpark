@@ -52,7 +52,7 @@ function TabSystem($atts)
                     </div>
                 </div>
             </div>
-            <div class="right_tab_header">
+            <div class="right_tab_header yellow_tab">
                 <div class="image-inner-tab">
                     <img src="<?php echo wp_get_attachment_image_url($img,'full'); ?>">
                 </div>

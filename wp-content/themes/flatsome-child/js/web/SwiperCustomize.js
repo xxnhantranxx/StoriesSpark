@@ -61,22 +61,35 @@ document.addEventListener("DOMContentLoaded", function() {
         spaceBetween: 30,
         freeMode: true,
     });
-    var TabContentInner = new Swiper(".TabContentInner", {
+
+    var Team = new Swiper(".TeamMember", {
         loop: true,
-        spaceBetween: 10,
-        slidesPerView: 1,
-        autoHeight: true,
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        // },
+        slidesPerView: 4,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
         navigation: {
-            nextEl: '.TabNext',
-            prevEl: '.TabPrev',
+            nextEl: ".cntt-button-team-next",
+            prevEl: ".cntt-button-team-prev",
         },
-        thumbs: {
-            swiper: HeaderTabInner,
+        pagination: {
+            el: ".pagination_team",
+            clickable: true,
         },
-        watchSlidesVisibility: true,
+        breakpoints: {
+            320: { 
+                slidesPerView: 1,
+                spaceBetween: 12,
+            },
+            768: { 
+                slidesPerView: 2,
+                spaceBetween: 16,
+            },
+            1024: { 
+                slidesPerView: 4,
+                spaceBetween: 35,
+            },
+        },
     });
 });

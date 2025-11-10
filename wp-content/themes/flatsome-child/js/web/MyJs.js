@@ -16,26 +16,42 @@ jQuery(document).ready(function ($) {
     const svg = $('.waveSvg');
 
     if (svg.length) {
+        
         const path1 = svg.find('.wave1');
         const path2 = svg.find('.wave2');
 
         if (path1.length && path2.length) {
+            const viewBoxWidth = 1920;
+            const viewBoxHeight = 150;
+            const pointSpacing = 20;
+            const baseline1 = viewBoxHeight - 90;
+            const baseline2 = viewBoxHeight - 85;
+            const amplitude1 = 40;
+            const amplitude2 = 20;
+
+            function buildPath(points) {
+                return [
+                    `M0,${viewBoxHeight}`,
+                    ...points.map((point) => `L${point}`),
+                    `L${viewBoxWidth},${viewBoxHeight}`,
+                    'Z',
+                ].join(' ');
+            }
+
             function updateWavePaths(offset) {
-                const pointSpacing = 20;
                 const points1 = [];
                 const points2 = [];
 
-                for (let x = 0; x <= 1920; x += pointSpacing) {
-                    const y1 = 25 + 12 * Math.sin(x * 0.002 + offset);
-                    const y2 = 25 + 15 * Math.sin(x * 0.003 + offset + 0.2);
-                    points1.push(x + ',' + y1);
-                    points2.push(x + ',' + y2);
+                for (let x = 0; x <= viewBoxWidth; x += pointSpacing) {
+                    const y1 = baseline1 + amplitude1 * Math.sin(x * 0.002 + offset);
+                    const y2 = baseline2 + amplitude2 * Math.sin(x * 0.003 + offset + 0.2);
+                    points1.push(`${x},${y1.toFixed(2)}`);
+                    points2.push(`${x},${y2.toFixed(2)}`);
                 }
 
-                const pathData1 = 'M0,60 L0,25 ' + points1.join(' ') + ' L1920,60 Z';
-                const pathData2 = 'M0,60 L0,25 ' + points2.join(' ') + ' L1920,60 Z';
-                path1.attr('d', pathData1);
-                path2.attr('d', pathData2);
+                path1.attr('d', buildPath(points1));
+                path2.attr('d', buildPath(points2));
+
             }
 
             function animateWaves() {
@@ -53,6 +69,20 @@ jQuery(document).ready(function ($) {
         const $container = $(this);
         const $headers = $container.find('.left_tab_header .item_header_tab');
         const $panels = $container.find('.content_pannel_tab .pannel.entry-content');
+        const $rightHeader = $container.find('.right_tab_header');
+        const colorClasses = ['yellow_tab', 'purple_tab', 'coffee_tab', 'green_tab'];
+
+        function syncRightHeader(idx) {
+            if (idx < 0) {
+                return;
+            }
+            const $header = $headers.eq(idx);
+            const colorClass = colorClasses.find((cls) => $header.hasClass(cls));
+            if (!colorClass) {
+                return;
+            }
+            $rightHeader.removeClass(colorClasses.join(' ')).addClass(colorClass);
+        }
 
         function animatePanel($panel) {
             const $items = $panel.find('._6typ');
@@ -79,6 +109,7 @@ jQuery(document).ready(function ($) {
 
             $panels.removeClass('active').eq(idx).addClass('active');
             animatePanel($panels.eq(idx));
+            syncRightHeader(idx);
         });
 
         // Khởi tạo animation cho panel đang active khi load trang
@@ -86,6 +117,7 @@ jQuery(document).ready(function ($) {
         if ($initial.length) {
             animatePanel($initial);
         }
+        syncRightHeader($headers.filter('.active').first().index());
     });
 
     // Program Tab: xử lý chuyển tab cho component Program
@@ -95,6 +127,9 @@ jQuery(document).ready(function ($) {
         const $panels = $container.find('.panel.entry-content'); // Tab content panels
 
         $tabs.on('click', function (e) {
+            if ($(e.target).closest('a').length) {
+                return;
+            }
             e.preventDefault();
             const idx = $(this).index();
 
@@ -104,6 +139,19 @@ jQuery(document).ready(function ($) {
 
             $panels.removeClass('active').eq(idx).addClass('active');
         });
+    });
+
+    // BoxQuyTrinh: xử lý chuyển tab giữa Cá nhân và Tổ chức
+    $(document).on('click', '._6kwx ._7mmn', function () {
+        const $tab = $(this);
+        const $container = $tab.closest('._6kwx');
+        const tabIndex = $tab.index();
+
+        $container.find('._7mmn').removeClass('active');
+        $tab.addClass('active');
+
+        const $boxes = $container.find('.BoxQuyTrinh');
+        $boxes.removeClass('active').eq(tabIndex).addClass('active');
     });
 
     $('.button-toggle-share').click(function(){
@@ -116,38 +164,40 @@ jQuery(document).ready(function ($) {
     const cards = gsap.utils.toArray(".card");
     const stackingSection = document.querySelector(".stacking-section");
 
-    // ✅ Set chiều cao stacking-section = (số card - 1) * 100vh
-    stackingSection.style.height = `calc(${(cards.length - 1) * 100}vh + 500px)`;
+    if (stackingSection && cards.length > 0) {
+        // ✅ Set chiều cao stacking-section = (số card - 1) * 100vh
+        stackingSection.style.height = `calc(${(cards.length - 1) * 100}vh + 500px)`;
 
-    cards.forEach((card, i) => {
-    if (i === cards.length - 1) return; // bỏ card cuối
+        cards.forEach((card, i) => {
+            if (i === cards.length - 1) return; // bỏ card cuối
 
-    const nextCard = cards[i + 1];
+            const nextCard = cards[i + 1];
 
-    const tl = gsap.timeline({
-        scrollTrigger: {
-        trigger: stackingSection,
-        start: () => `top+=${i * window.innerHeight} top`,
-        end: () => `+=${window.innerHeight}`,
-        scrub: true,
-        pinSpacing: false,
-        }
-    });
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: stackingSection,
+                    start: () => `top+=${i * window.innerHeight} top`,
+                    end: () => `+=${window.innerHeight}`,
+                    scrub: true,
+                    pinSpacing: false,
+                }
+            });
 
-    // card hiện tại trượt lên, để lộ card kế tiếp
-    tl.to(card, {
-        yPercent: -120,
-        scale: 1.05,
-        opacity: 0.95,
-        ease: "none"
-    }, 0);
+            // card hiện tại trượt lên, để lộ card kế tiếp
+            tl.to(card, {
+                yPercent: -120,
+                scale: 1.05,
+                opacity: 0.95,
+                ease: "none"
+            }, 0);
 
-    // card kế dưới scale lên để tạo cảm giác nổi
-    tl.to(nextCard, {
-        scale: 1,
-        ease: "none"
-    }, 0);
-    });
+            // card kế dưới scale lên để tạo cảm giác nổi
+            tl.to(nextCard, {
+                scale: 1,
+                ease: "none"
+            }, 0);
+        });
+    }
 
 	// Counter: đếm số tăng dần trong 5s cho .count
 	function animateCount($el, durationMs) {

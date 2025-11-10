@@ -15,3 +15,7 @@ require_once __DIR__ . '/components/BreadcumbsItem.php';
 require_once __DIR__ . '/components/Program.php';
 require_once __DIR__ . '/components/BoxQuyTrinh.php';
 require_once __DIR__ . '/components/LocalStrore.php';
+require_once __DIR__ . '/components/ItemTabProgram.php';
+require_once __DIR__ . '/components/TabHeaderProgram.php';
+require_once __DIR__ . '/components/TabContentProgram.php';
+require_once __DIR__ . '/components/Team.php';

@@ -17,6 +17,9 @@
 #footer .section-footer-menu {
   padding: 0;
 }
+#footer .section-footer-menu .sftm_r1_c1 .logo_footer .img-inner img {
+  width: auto;
+}
 #footer .section-footer-menu .follow-icon-footer {
   margin-top: 20px;
 }

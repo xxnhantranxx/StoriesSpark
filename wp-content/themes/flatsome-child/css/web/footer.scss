@@ -12,9 +12,19 @@
                 margin-bottom: 0;
             }
         }
+        
     }
     .section-footer-menu{
         padding: 0;
+        .sftm_r1_c1 {
+            .logo_footer {
+                .img-inner{
+                    img{
+                        width: auto;
+                    }
+                }
+            }
+        }
         .follow-icon-footer{
             margin-top: 20px;
             .icon {
