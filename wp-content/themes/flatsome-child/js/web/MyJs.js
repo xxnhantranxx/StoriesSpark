@@ -158,45 +158,13 @@ jQuery(document).ready(function ($) {
         $(this).next('.share-list').toggleClass('active');
     });
     
-	// GSAP stacking cards trong jQuery document
-	gsap.registerPlugin(ScrollTrigger);
-
-    const cards = gsap.utils.toArray(".card");
-    const stackingSection = document.querySelector(".stacking-section");
-
-    if (stackingSection && cards.length > 0) {
-        // ✅ Set chiều cao stacking-section = (số card - 1) * 100vh
-        stackingSection.style.height = `calc(${(cards.length - 1) * 100}vh + 500px)`;
-
-        cards.forEach((card, i) => {
-            if (i === cards.length - 1) return; // bỏ card cuối
-
-            const nextCard = cards[i + 1];
-
-            const tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: stackingSection,
-                    start: () => `top+=${i * window.innerHeight} top`,
-                    end: () => `+=${window.innerHeight}`,
-                    scrub: true,
-                    pinSpacing: false,
-                }
-            });
-
-            // card hiện tại trượt lên, để lộ card kế tiếp
-            tl.to(card, {
-                yPercent: -120,
-                scale: 1.05,
-                opacity: 0.95,
-                ease: "none"
-            }, 0);
-
-            // card kế dưới scale lên để tạo cảm giác nổi
-            tl.to(nextCard, {
-                scale: 1,
-                ease: "none"
-            }, 0);
-        });
+	if($(window).width() > 980){
+        $("#ran").skywheel({effect:1,width:"970px",height:"300px"});
+        $("#ran li:first-child").click();
+        setInterval(() => {
+            // console.log(index++);
+            $("#ran li.effect1_1.mask1").click();
+        }, 2000);
     }
 
 	// Counter: đếm số tăng dần trong 5s cho .count

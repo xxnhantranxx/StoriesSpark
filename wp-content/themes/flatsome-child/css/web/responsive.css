@@ -559,40 +559,42 @@
   #main .section-5 .stacking-section {
     margin-top: 0;
   }
-  #main .section-5 .stacking-section .cards {
-    height: calc(100vh - 100px);
+  #main .section-5 .stacking-section .StackingCard {
+    height: auto;
+    padding-top: 35px;
+    margin-top: 0px;
   }
-  #main .section-5 .stacking-section .cards::before {
+  #main .section-5 .stacking-section .StackingCard::before {
     display: none;
   }
-  #main .section-5 .stacking-section .cards .card {
+  #main .section-5 .stacking-section .StackingCard .card {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 100px);
     width: 100%;
     padding: 15px;
     border-radius: 20px;
   }
-  #main .section-5 .stacking-section .cards .card ._3ykb {
+  #main .section-5 .stacking-section .StackingCard .card ._3ykb {
     width: 100%;
     margin-right: 0;
     order: 2;
     flex: 1;
   }
-  #main .section-5 .stacking-section .cards .card ._3ykb ._0kts {
+  #main .section-5 .stacking-section .StackingCard .card ._3ykb ._0kts {
     padding-top: 20px;
+    padding-bottom: 30px;
   }
-  #main .section-5 .stacking-section .cards .card ._3ykb ._0kts ._9uln {
+  #main .section-5 .stacking-section .StackingCard .card ._3ykb ._0kts ._9uln {
     height: auto;
     margin-bottom: 8px;
   }
-  #main .section-5 .stacking-section .cards .card ._9vgk {
+  #main .section-5 .stacking-section .StackingCard .card ._9vgk {
     order: 1;
     margin-bottom: 20px;
     flex: unset;
     height: 50%;
   }
-  #main .section-5 .stacking-section .cards .card ._9vgk ._7xbx {
+  #main .section-5 .stacking-section .StackingCard .card ._9vgk ._7xbx {
     border-radius: 20px;
     height: 100%;
     width: 100%;

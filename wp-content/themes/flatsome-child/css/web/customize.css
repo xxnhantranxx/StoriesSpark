@@ -474,51 +474,23 @@
 }
 #main .section-5 .stacking-section {
   position: relative;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 #main .section-5 .stacking-section .cards {
-  position: sticky;
-  top: 50px;
-  height: 400px;
+  height: 600px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  perspective: 1200px;
-}
-#main .section-5 .stacking-section .cards::before {
-  content: "";
-  position: absolute;
-  width: 227px;
-  height: 278px;
-  background: url(../../img/bg_cards.png) no-repeat;
-  left: 0;
-  top: -130px;
+  justify-content: center;
+  margin-top: 60px;
 }
 #main .section-5 .stacking-section .cards .card {
-  position: absolute;
-  width: 950px;
-  height: 315px;
   border-radius: 24px 150px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
   transform-origin: center center;
   background: #FFD447;
   padding: 25px 25px 26px 90px;
-}
-#main .section-5 .stacking-section .cards .card.card-1 {
-  z-index: 3;
-}
-#main .section-5 .stacking-section .cards .card.card-2 {
-  z-index: 2;
-  margin-top: 20px;
-  transform: scale(0.98);
-}
-#main .section-5 .stacking-section .cards .card.card-3 {
-  z-index: 1;
-  margin-top: 40px;
-  transform: scale(0.96);
 }
 #main .section-5 .stacking-section .cards .card ._3ykb {
   width: calc(50% - 50px);
@@ -557,6 +529,10 @@
 #main .section-5 .stacking-section .cards .card ._9vgk {
   flex: 1;
   height: 100%;
+  max-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #main .section-5 .stacking-section .cards .card ._9vgk ._7xbx {
   width: 100%;
@@ -564,6 +540,12 @@
   border-radius: 8px 150px 8px 8px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#main .section-5 .stacking-section .cards .mask1 .inner .card {
+  background-color: #c79e1b;
+}
+#main .section-5 .stacking-section .cards .mask2 .inner .card {
+  background-color: #bb8f01;
 }
 #main .section-6 {
   padding-bottom: 60px;

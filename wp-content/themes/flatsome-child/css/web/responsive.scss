@@ -688,15 +688,16 @@
             }
             .stacking-section{
                 margin-top: 0;
-                .cards{
-                    height: calc(100vh - 100px);
+                .StackingCard{
+                    height: auto;
+                    padding-top: 35px;
+                    margin-top: 0px;
                     &::before{
                         display: none;
                     }
                     .card{
                         display: flex;
                         flex-direction: column;
-                        height: calc(100vh - 100px);
                         width: 100%;
                         padding: 15px;
                         border-radius: 20px;
@@ -707,6 +708,7 @@
                             flex: 1;
                             ._0kts{
                                 padding-top: 20px;
+                                padding-bottom: 30px;
                                 ._9uln {
                                     height: auto;
                                     margin-bottom: 8px;

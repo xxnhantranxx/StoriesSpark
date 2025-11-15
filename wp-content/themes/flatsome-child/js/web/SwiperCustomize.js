@@ -92,4 +92,15 @@ document.addEventListener("DOMContentLoaded", function() {
             },
         },
     });
+    var StackingCard = new Swiper(".StackingCard", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 16,
+        grabCursor: true,
+        autoHeight: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+    });
 });

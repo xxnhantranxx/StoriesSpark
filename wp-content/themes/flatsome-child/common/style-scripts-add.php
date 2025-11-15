@@ -27,6 +27,7 @@ function enqueue_frontend_styles() {
         'css-fw6' => '/assets/css/fontawesome-all.css',
         'css-select-2' => '/assets/css/select2.min.css',
         'style-swiper' => '/assets/css/swiper-bundle.min.css',
+        'style-skywheel' => '/assets/css/jq-skywheel.css',
         'style-animate' => '/assets/css/animate.min.css',
         'style-system' => '/css/web/system-core.css',
         'style-footer' => '/css/web/footer.css',
@@ -49,6 +50,7 @@ function enqueue_footer_scripts() {
     $scripts = [
         'select2-js' => '/assets/js/select2.min.js',
         'swiper-js' => '/assets/js/swiper-bundle.min.js',
+        'skywheel-js' => '/assets/js/jq-skywheel.js',
         'wow-js' => '/assets/js/wow.js',
         'gsap-js' => '/assets/js/gsap.min.js',
         'ScrollTrigger-js' => '/assets/js/ScrollTrigger.min.js',
